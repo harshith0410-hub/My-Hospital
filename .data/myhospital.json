@@ -1,0 +1,875 @@
+{
+  "profiles": [
+    {
+      "id": "usr-patient-1",
+      "email": "patient@demo.org",
+      "fullName": "Sarah Connor",
+      "role": "patient",
+      "phone": "+1 (555) 012-3456",
+      "createdAt": "2026-10-15T04:31:03.526Z",
+      "updatedAt": "2026-10-15T04:31:03.526Z"
+    },
+    {
+      "id": "usr-staff-1",
+      "email": "staff@metrohealth.org",
+      "fullName": "Marcus Vance, RN (Head Nurse)",
+      "role": "hospital_staff",
+      "phone": "+1 (555) 019-9876",
+      "assignedHospitalId": "hosp-metro-center",
+      "createdAt": "2026-10-15T04:31:03.526Z",
+      "updatedAt": "2026-10-15T04:31:03.526Z"
+    },
+    {
+      "id": "usr-admin-1",
+      "email": "admin@myhospital.org",
+      "fullName": "Administrator Dr. Patricia Hayes",
+      "role": "admin",
+      "phone": "+1 (555) 011-0000",
+      "createdAt": "2026-10-15T04:31:03.526Z",
+      "updatedAt": "2026-10-15T04:31:03.526Z"
+    }
+  ],
+  "specialties": [
+    {
+      "id": "spec-general-medicine",
+      "name": "General Medicine",
+      "description": "Specialized department for General Medicine consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-emergency-medicine",
+      "name": "Emergency Medicine",
+      "description": "Specialized department for Emergency Medicine consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-cardiology",
+      "name": "Cardiology",
+      "description": "Specialized department for Cardiology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-cardiothoracic-surgery",
+      "name": "Cardiothoracic Surgery",
+      "description": "Specialized department for Cardiothoracic Surgery consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-neurology",
+      "name": "Neurology",
+      "description": "Specialized department for Neurology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-neurosurgery",
+      "name": "Neurosurgery",
+      "description": "Specialized department for Neurosurgery consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-orthopaedics",
+      "name": "Orthopaedics",
+      "description": "Specialized department for Orthopaedics consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-dermatology",
+      "name": "Dermatology",
+      "description": "Specialized department for Dermatology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-pulmonology",
+      "name": "Pulmonology",
+      "description": "Specialized department for Pulmonology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-gastroenterology",
+      "name": "Gastroenterology",
+      "description": "Specialized department for Gastroenterology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-nephrology",
+      "name": "Nephrology",
+      "description": "Specialized department for Nephrology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-urology",
+      "name": "Urology",
+      "description": "Specialized department for Urology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-oncology",
+      "name": "Oncology",
+      "description": "Specialized department for Oncology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-paediatrics",
+      "name": "Paediatrics",
+      "description": "Specialized department for Paediatrics consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-obstetrics-and-gynaecology",
+      "name": "Obstetrics and Gynaecology",
+      "description": "Specialized department for Obstetrics and Gynaecology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-ophthalmology",
+      "name": "Ophthalmology",
+      "description": "Specialized department for Ophthalmology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-ent",
+      "name": "ENT",
+      "description": "Specialized department for ENT consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-endocrinology",
+      "name": "Endocrinology",
+      "description": "Specialized department for Endocrinology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-psychiatry",
+      "name": "Psychiatry",
+      "description": "Specialized department for Psychiatry consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-general-surgery",
+      "name": "General Surgery",
+      "description": "Specialized department for General Surgery consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-anaesthesiology",
+      "name": "Anaesthesiology",
+      "description": "Specialized department for Anaesthesiology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-radiology",
+      "name": "Radiology",
+      "description": "Specialized department for Radiology consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-pathology-and-laboratory-services",
+      "name": "Pathology and Laboratory Services",
+      "description": "Specialized department for Pathology and Laboratory Services consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-dentistry",
+      "name": "Dentistry",
+      "description": "Specialized department for Dentistry consultation, diagnostics, and patient care.",
+      "isActive": true
+    },
+    {
+      "id": "spec-physiotherapy",
+      "name": "Physiotherapy",
+      "description": "Specialized department for Physiotherapy consultation, diagnostics, and patient care.",
+      "isActive": true
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hosp-metro-center",
+      "name": "Metro Health Center of Excellence",
+      "tagline": "Level 1 Trauma & Tertiary Cardiac Care",
+      "verificationStatus": "verified",
+      "isSimulatedDemo": true,
+      "address": "1000 Mission Bay Blvd S",
+      "locality": "Mission Bay",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94158",
+      "latitude": 37.7689,
+      "longitude": -122.3916,
+      "emergencyPhone": "+1 (415) 555-0199",
+      "generalPhone": "+1 (415) 555-0100",
+      "email": "info@metrohealth.example.com",
+      "website": "https://metrohealth.example.com",
+      "emergencyStatus": "accepting",
+      "waitingTimeEstimateMinutes": 18,
+      "informationSource": "hospital_reported",
+      "lastCapacityUpdate": "2026-10-15T05:31:03.525Z",
+      "createdAt": "2026-10-15T04:31:03.526Z",
+      "updatedAt": "2026-10-15T05:31:03.525Z",
+      "departments": [
+        {
+          "id": "dept-m-1",
+          "hospitalId": "hosp-metro-center",
+          "specialtyId": "spec-emergency-medicine",
+          "specialtyName": "Emergency Medicine",
+          "contactExtension": "101",
+          "floorLocation": "Ground Floor, Wing A",
+          "isActive": true
+        },
+        {
+          "id": "dept-m-2",
+          "hospitalId": "hosp-metro-center",
+          "specialtyId": "spec-cardiology",
+          "specialtyName": "Cardiology",
+          "contactExtension": "204",
+          "floorLocation": "3rd Floor, Tower B",
+          "isActive": true
+        },
+        {
+          "id": "dept-m-3",
+          "hospitalId": "hosp-metro-center",
+          "specialtyId": "spec-neurology",
+          "specialtyName": "Neurology",
+          "contactExtension": "310",
+          "floorLocation": "4th Floor, Tower B",
+          "isActive": true
+        },
+        {
+          "id": "dept-m-4",
+          "hospitalId": "hosp-metro-center",
+          "specialtyId": "spec-orthopaedics",
+          "specialtyName": "Orthopaedics",
+          "contactExtension": "412",
+          "floorLocation": "2nd Floor, Wing C",
+          "isActive": true
+        },
+        {
+          "id": "dept-m-5",
+          "hospitalId": "hosp-metro-center",
+          "specialtyId": "spec-paediatrics",
+          "specialtyName": "Paediatrics",
+          "contactExtension": "505",
+          "floorLocation": "5th Floor, Children Pavilion",
+          "isActive": true
+        }
+      ],
+      "bedCategories": [
+        {
+          "id": "bed-m-icu",
+          "hospitalId": "hosp-metro-center",
+          "categoryName": "ICU",
+          "physicalCapacity": 24,
+          "unavailableCount": 2,
+          "usableCapacity": 22,
+          "occupiedCount": 16,
+          "reservedCount": 1,
+          "availableBeds": 5,
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "bed-m-gen",
+          "hospitalId": "hosp-metro-center",
+          "categoryName": "General Ward",
+          "physicalCapacity": 120,
+          "unavailableCount": 5,
+          "usableCapacity": 115,
+          "occupiedCount": 92,
+          "reservedCount": 3,
+          "availableBeds": 20,
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "bed-m-pvt",
+          "hospitalId": "hosp-metro-center",
+          "categoryName": "Private Room",
+          "physicalCapacity": 40,
+          "unavailableCount": 0,
+          "usableCapacity": 40,
+          "occupiedCount": 34,
+          "reservedCount": 0,
+          "availableBeds": 6,
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "bed-m-ped",
+          "hospitalId": "hosp-metro-center",
+          "categoryName": "Paediatric Bed",
+          "physicalCapacity": 30,
+          "unavailableCount": 1,
+          "usableCapacity": 29,
+          "occupiedCount": 18,
+          "reservedCount": 1,
+          "availableBeds": 10,
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        }
+      ],
+      "doctorShifts": [
+        {
+          "id": "doc-m-1",
+          "hospitalId": "hosp-metro-center",
+          "departmentId": "dept-m-1",
+          "specialtyId": "spec-emergency-medicine",
+          "doctorName": "Dr. Evelyn Reed, MD, FACEP",
+          "designation": "Attending Emergency Physician",
+          "shiftStart": "07:00",
+          "shiftEnd": "19:00",
+          "isOnDuty": true,
+          "isOnCall": false,
+          "notes": "Triaging acute arrivals in Trauma Bay 1",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "doc-m-2",
+          "hospitalId": "hosp-metro-center",
+          "departmentId": "dept-m-2",
+          "specialtyId": "spec-cardiology",
+          "doctorName": "Dr. Aris Thorne, MD, FACC",
+          "designation": "Chief of Interventional Cardiology",
+          "shiftStart": "08:00",
+          "shiftEnd": "18:00",
+          "isOnDuty": true,
+          "isOnCall": true,
+          "notes": "Available for emergent catheterization protocol",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "doc-m-3",
+          "hospitalId": "hosp-metro-center",
+          "departmentId": "dept-m-3",
+          "specialtyId": "spec-neurology",
+          "doctorName": "Dr. Maya Lin, MD, PhD",
+          "designation": "Neurology Specialist",
+          "shiftStart": "12:00",
+          "shiftEnd": "22:00",
+          "isOnDuty": true,
+          "isOnCall": false,
+          "notes": "Stroke team lead on duty",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        }
+      ],
+      "services": [
+        {
+          "id": "srv-m-ct",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "ct_scan",
+          "displayName": "256-Slice Dual Energy CT Scanner",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "24/7 dedicated trauma scanner",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "srv-m-mri",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "mri",
+          "displayName": "3.0 Tesla High-Field MRI",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "Routine & neuro protocols active",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "srv-m-xray",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "xray",
+          "displayName": "Digital Radiography & Fluoroscopy",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "Operational across all trauma bays",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "srv-m-bb",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "blood_bank",
+          "displayName": "Trauma Blood Bank & Massive Transfusion",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "Adequate O-Negative units in stock",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "srv-m-vent",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "ventilators",
+          "displayName": "Mechanical Ventilators & High-Flow O2",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "14 portable & stationary units free",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        },
+        {
+          "id": "srv-m-ot",
+          "hospitalId": "hosp-metro-center",
+          "serviceKey": "operation_theatre",
+          "displayName": "Emergency Surgical Theatres",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "2 suites staffed for immediate surgical entry",
+          "lastUpdated": "2026-10-15T05:31:03.525Z"
+        }
+      ]
+    },
+    {
+      "id": "hosp-st-jude",
+      "name": "St. Jude Regional Community Hospital",
+      "tagline": "Comprehensive Family & Acute Care Medicine",
+      "verificationStatus": "verified",
+      "isSimulatedDemo": true,
+      "address": "225 Bush Street",
+      "locality": "Financial District",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94104",
+      "latitude": 37.7909,
+      "longitude": -122.4014,
+      "emergencyPhone": "+1 (415) 555-0299",
+      "generalPhone": "+1 (415) 555-0200",
+      "email": "admissions@stjude-regional.example.com",
+      "website": "https://stjude-regional.example.com",
+      "emergencyStatus": "restricted_capacity",
+      "waitingTimeEstimateMinutes": 45,
+      "informationSource": "hospital_reported",
+      "lastCapacityUpdate": "2026-10-15T04:31:03.526Z",
+      "createdAt": "2026-10-15T04:31:03.526Z",
+      "updatedAt": "2026-10-15T04:31:03.526Z",
+      "departments": [
+        {
+          "id": "dept-sj-1",
+          "hospitalId": "hosp-st-jude",
+          "specialtyId": "spec-general-medicine",
+          "specialtyName": "General Medicine",
+          "contactExtension": "102",
+          "floorLocation": "1st Floor",
+          "isActive": true
+        },
+        {
+          "id": "dept-sj-2",
+          "hospitalId": "hosp-st-jude",
+          "specialtyId": "spec-emergency-medicine",
+          "specialtyName": "Emergency Medicine",
+          "contactExtension": "911",
+          "floorLocation": "Ground Floor",
+          "isActive": true
+        },
+        {
+          "id": "dept-sj-3",
+          "hospitalId": "hosp-st-jude",
+          "specialtyId": "spec-pulmonology",
+          "specialtyName": "Pulmonology",
+          "contactExtension": "304",
+          "floorLocation": "3rd Floor",
+          "isActive": true
+        }
+      ],
+      "bedCategories": [
+        {
+          "id": "bed-sj-icu",
+          "hospitalId": "hosp-st-jude",
+          "categoryName": "ICU",
+          "physicalCapacity": 12,
+          "unavailableCount": 2,
+          "usableCapacity": 10,
+          "occupiedCount": 9,
+          "reservedCount": 1,
+          "availableBeds": 0,
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        },
+        {
+          "id": "bed-sj-gen",
+          "hospitalId": "hosp-st-jude",
+          "categoryName": "General Ward",
+          "physicalCapacity": 60,
+          "unavailableCount": 0,
+          "usableCapacity": 60,
+          "occupiedCount": 52,
+          "reservedCount": 2,
+          "availableBeds": 6,
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        }
+      ],
+      "doctorShifts": [
+        {
+          "id": "doc-sj-1",
+          "hospitalId": "hosp-st-jude",
+          "departmentId": "dept-sj-2",
+          "specialtyId": "spec-emergency-medicine",
+          "doctorName": "Dr. Henry Gomez, MD",
+          "designation": "ER Staff Physician",
+          "shiftStart": "08:00",
+          "shiftEnd": "20:00",
+          "isOnDuty": true,
+          "isOnCall": false,
+          "notes": "High surge in respiratory patients",
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        }
+      ],
+      "services": [
+        {
+          "id": "srv-sj-ct",
+          "hospitalId": "hosp-st-jude",
+          "serviceKey": "ct_scan",
+          "displayName": "Multi-slice CT Scanner",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "notes": "Operational",
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        },
+        {
+          "id": "srv-sj-mri",
+          "hospitalId": "hosp-st-jude",
+          "serviceKey": "mri",
+          "displayName": "1.5 Tesla MRI",
+          "hasEquipment": true,
+          "isOperational": false,
+          "acceptingPatients": false,
+          "notes": "Under scheduled annual coil maintenance",
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        }
+      ]
+    },
+    {
+      "id": "hosp-bayview-trauma",
+      "name": "Bayview Specialty & Trauma Institute",
+      "tagline": "Advanced Oncology, Orthopaedic & Surgical Care",
+      "verificationStatus": "unverified",
+      "isSimulatedDemo": true,
+      "address": "1500 Owens Street",
+      "locality": "Bayview District",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94158",
+      "latitude": 37.7665,
+      "longitude": -122.3955,
+      "emergencyPhone": "+1 (415) 555-0399",
+      "generalPhone": "+1 (415) 555-0300",
+      "email": "admin@bayview-specialty.example.com",
+      "website": "https://bayview-specialty.example.com",
+      "emergencyStatus": "requires_confirmation",
+      "waitingTimeEstimateMinutes": 30,
+      "informationSource": "simulated",
+      "lastCapacityUpdate": "2026-10-13T05:31:03.526Z",
+      "createdAt": "2026-10-12T05:31:03.526Z",
+      "updatedAt": "2026-10-13T05:31:03.526Z",
+      "departments": [
+        {
+          "id": "dept-bv-1",
+          "hospitalId": "hosp-bayview-trauma",
+          "specialtyId": "spec-oncology",
+          "specialtyName": "Oncology",
+          "contactExtension": "401",
+          "floorLocation": "Cancer Wing",
+          "isActive": true
+        },
+        {
+          "id": "dept-bv-2",
+          "hospitalId": "hosp-bayview-trauma",
+          "specialtyId": "spec-orthopaedics",
+          "specialtyName": "Orthopaedics",
+          "contactExtension": "402",
+          "floorLocation": "Joint Replacement Wing",
+          "isActive": true
+        }
+      ],
+      "bedCategories": [
+        {
+          "id": "bed-bv-gen",
+          "hospitalId": "hosp-bayview-trauma",
+          "categoryName": "General Ward",
+          "physicalCapacity": 45,
+          "unavailableCount": 5,
+          "usableCapacity": 40,
+          "occupiedCount": 35,
+          "reservedCount": 0,
+          "availableBeds": 5,
+          "lastUpdated": "2026-10-13T05:31:03.526Z"
+        }
+      ],
+      "doctorShifts": [
+        {
+          "id": "doc-bv-1",
+          "hospitalId": "hosp-bayview-trauma",
+          "departmentId": "dept-bv-1",
+          "specialtyId": "spec-oncology",
+          "doctorName": "Dr. Clara Oswald, MD",
+          "designation": "Medical Oncologist",
+          "shiftStart": "09:00",
+          "shiftEnd": "17:00",
+          "isOnDuty": false,
+          "isOnCall": true,
+          "notes": "Consultation by appointment only",
+          "lastUpdated": "2026-10-13T05:31:03.526Z"
+        }
+      ],
+      "services": [
+        {
+          "id": "srv-bv-lab",
+          "hospitalId": "hosp-bayview-trauma",
+          "serviceKey": "laboratory",
+          "displayName": "Comprehensive Clinical Pathology Lab",
+          "hasEquipment": true,
+          "isOperational": true,
+          "acceptingPatients": true,
+          "lastUpdated": "2026-10-15T04:31:03.526Z"
+        }
+      ]
+    }
+  ],
+  "admissionRequests": [
+    {
+      "id": "req-6f125e09",
+      "patientId": "usr-patient-1",
+      "patientName": "Sarah Connor",
+      "patientPhone": "+1 (555) 012-3456",
+      "patientEmail": "patient@demo.org",
+      "hospitalId": "hosp-metro-center",
+      "hospitalName": "Metro Health Center of Excellence",
+      "departmentId": "dept-m-1",
+      "specialtyName": "Emergency Medicine",
+      "bedCategoryId": "bed-m-icu",
+      "bedCategoryName": "ICU",
+      "acuityLevel": "emergency",
+      "chiefComplaint": "Severe acute chest tightness radiating down left arm with shortness of breath.",
+      "status": "Under Review",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "changedBy": "usr-patient-1",
+          "changedAt": "2026-10-15T05:34:06.349Z",
+          "reason": "Patient submitted digital coordination request"
+        },
+        {
+          "status": "Under Review",
+          "changedBy": "usr-staff-1",
+          "changedAt": "2026-10-15T05:37:14.982Z",
+          "reason": "Triage nurse assigned to evaluate bed availability"
+        }
+      ],
+      "createdAt": "2026-10-15T05:34:06.349Z",
+      "updatedAt": "2026-10-15T05:37:14.982Z",
+      "statusReason": "Triage nurse assigned to evaluate bed availability"
+    },
+    {
+      "id": "req-demo-1",
+      "patientId": "usr-patient-1",
+      "patientName": "Sarah Connor",
+      "patientPhone": "+1 (555) 012-3456",
+      "patientEmail": "patient@demo.org",
+      "hospitalId": "hosp-metro-center",
+      "hospitalName": "Metro Health Center of Excellence",
+      "departmentId": "dept-m-1",
+      "specialtyName": "Emergency Medicine",
+      "bedCategoryId": "bed-m-gen",
+      "bedCategoryName": "General Ward",
+      "acuityLevel": "urgent",
+      "chiefComplaint": "Acute abdominal pain in lower right quadrant with mild fever and nausea.",
+      "medicalNotes": "No known drug allergies. Onset 4 hours ago.",
+      "status": "Under Review",
+      "statusReason": "Triage nurse assigned to review vitals upon arrival.",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "changedBy": "usr-patient-1",
+          "changedAt": "2026-10-15T05:06:03.526Z",
+          "reason": "Initial digital request submitted by patient"
+        },
+        {
+          "status": "Under Review",
+          "changedBy": "usr-staff-1",
+          "changedAt": "2026-10-15T05:16:03.526Z",
+          "reason": "Reviewing triage symptoms against available clinical beds"
+        }
+      ],
+      "createdAt": "2026-10-15T05:06:03.526Z",
+      "updatedAt": "2026-10-15T05:16:03.526Z"
+    },
+    {
+      "id": "req-demo-2",
+      "patientId": "usr-patient-1",
+      "patientName": "Sarah Connor (Dependent: John Connor)",
+      "patientPhone": "+1 (555) 012-3456",
+      "patientEmail": "patient@demo.org",
+      "hospitalId": "hosp-metro-center",
+      "hospitalName": "Metro Health Center of Excellence",
+      "departmentId": "dept-m-2",
+      "specialtyName": "Cardiology",
+      "bedCategoryId": "bed-m-icu",
+      "bedCategoryName": "ICU",
+      "acuityLevel": "emergency",
+      "chiefComplaint": "Substernal chest pressure radiating to left arm.",
+      "medicalNotes": "History of hypertension. Aspirin 325mg taken.",
+      "status": "Accepted",
+      "statusReason": "ICU Bed held under emergency hold protocol.",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "changedBy": "usr-patient-1",
+          "changedAt": "2026-10-15T04:51:03.526Z"
+        },
+        {
+          "status": "Under Review",
+          "changedBy": "usr-staff-1",
+          "changedAt": "2026-10-15T05:01:03.526Z"
+        },
+        {
+          "status": "Accepted",
+          "changedBy": "usr-staff-1",
+          "changedAt": "2026-10-15T05:21:03.526Z",
+          "reason": "Emergency hold active. Bed held for 30 minutes."
+        }
+      ],
+      "reservationId": "res-demo-2",
+      "reservationExpiresAt": "2026-10-15T05:51:03.526Z",
+      "createdAt": "2026-10-15T04:51:03.526Z",
+      "updatedAt": "2026-10-15T05:21:03.526Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res-demo-2",
+      "requestId": "req-demo-2",
+      "hospitalId": "hosp-metro-center",
+      "bedCategoryId": "bed-m-icu",
+      "patientId": "usr-patient-1",
+      "reservedAt": "2026-10-15T05:21:03.526Z",
+      "expiresAt": "2026-10-15T05:51:03.526Z",
+      "status": "active"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-11be0d75-e0c6-4023-817a-e046601aa36a",
+      "userId": "usr-patient-1",
+      "title": "Admission Request Under Review",
+      "message": "Metro Health Center of Excellence has marked your admission request #req-6f125e09 as Under Review. Note: Triage nurse assigned to evaluate bed availability",
+      "type": "info",
+      "read": false,
+      "linkUrl": "/requests",
+      "createdAt": "2026-10-15T05:37:14.982Z"
+    },
+    {
+      "id": "notif-6189e89a-6b41-4616-a391-bf5b98e5efc5",
+      "userId": "usr-staff-1",
+      "title": "New Admission Request Received",
+      "message": "New EMERGENCY request #req-6f125e09 for Emergency Medicine.",
+      "type": "info",
+      "read": false,
+      "linkUrl": "/dashboard/admissions",
+      "createdAt": "2026-10-15T05:34:06.350Z"
+    },
+    {
+      "id": "notif-1",
+      "userId": "usr-patient-1",
+      "title": "Admission Request Accepted",
+      "message": "Metro Health Center has accepted request #req-demo-2. An ICU bed reservation is held for 30 minutes.",
+      "type": "success",
+      "read": false,
+      "linkUrl": "/requests",
+      "createdAt": "2026-10-15T05:21:03.526Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "usr-staff-1",
+      "title": "New Admission Request Received",
+      "message": "New Urgent admission request #req-demo-1 for Emergency Medicine received.",
+      "type": "info",
+      "read": true,
+      "linkUrl": "/dashboard/admissions",
+      "createdAt": "2026-10-15T05:06:03.526Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-6fa5a699-489b-4eda-9871-8d5a85439036",
+      "timestamp": "2026-10-15T05:38:53.079Z",
+      "actorId": "usr-admin-1",
+      "actorEmail": "admin@myhospital.org",
+      "actorRole": "admin",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "usr-admin-1"
+    },
+    {
+      "id": "audit-96339649-362a-47dd-9e28-738cae060d90",
+      "timestamp": "2026-10-15T05:37:14.982Z",
+      "actorId": "usr-staff-1",
+      "actorEmail": "staff@metrohealth.org",
+      "actorRole": "hospital_staff",
+      "action": "admission_request.under_review",
+      "entityType": "admission_request",
+      "entityId": "req-6f125e09",
+      "metadata": {
+        "nextStatus": "Under Review",
+        "reason": "Triage nurse assigned to evaluate bed availability"
+      }
+    },
+    {
+      "id": "audit-82352526-8278-4057-b9c5-4cd65636f7d0",
+      "timestamp": "2026-10-15T05:35:13.867Z",
+      "actorId": "usr-staff-1",
+      "actorEmail": "staff@metrohealth.org",
+      "actorRole": "hospital_staff",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "usr-staff-1"
+    },
+    {
+      "id": "audit-0835be1d-1d41-43c6-9f8c-bfc3e9dbbfeb",
+      "timestamp": "2026-10-15T05:34:06.350Z",
+      "actorId": "usr-patient-1",
+      "actorEmail": "patient@demo.org",
+      "actorRole": "patient",
+      "action": "admission_request.created",
+      "entityType": "admission_request",
+      "entityId": "req-6f125e09",
+      "metadata": {
+        "hospitalId": "hosp-metro-center",
+        "acuityLevel": "emergency"
+      }
+    },
+    {
+      "id": "audit-2f5d58a0-3a3d-4754-8a93-ca9e9d63c741",
+      "timestamp": "2026-10-15T05:34:02.486Z",
+      "actorId": "usr-patient-1",
+      "actorEmail": "patient@demo.org",
+      "actorRole": "patient",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "usr-patient-1"
+    },
+    {
+      "id": "audit-1",
+      "timestamp": "2026-10-15T05:06:03.526Z",
+      "actorId": "usr-patient-1",
+      "actorEmail": "patient@demo.org",
+      "actorRole": "patient",
+      "action": "admission_request.created",
+      "entityType": "admission_request",
+      "entityId": "req-demo-1",
+      "metadata": {
+        "hospitalId": "hosp-metro-center",
+        "acuity": "urgent"
+      }
+    },
+    {
+      "id": "audit-2",
+      "timestamp": "2026-10-15T05:21:03.526Z",
+      "actorId": "usr-staff-1",
+      "actorEmail": "staff@metrohealth.org",
+      "actorRole": "hospital_staff",
+      "action": "admission_request.accepted",
+      "entityType": "admission_request",
+      "entityId": "req-demo-2",
+      "metadata": {
+        "bedCategoryId": "bed-m-icu",
+        "reservationId": "res-demo-2"
+      }
+    }
+  ]
+}

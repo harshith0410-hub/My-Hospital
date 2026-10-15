@@ -1,0 +1,6 @@
+{
+  "name": "MyHospital",
+  "description": "Find the Right Care. At the Right Time. Healthcare coordination platform for discovering nearby hospitals, inspecting reported capacity, and managing admission requests.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
